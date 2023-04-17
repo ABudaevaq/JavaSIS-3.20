@@ -1,7 +1,8 @@
 package pro.it.sis.javacourse;
 
 public class Target {
-
+    protected int hp = 100;
+    // Изобретаем велосипед
     public int getPhysicalDamage() {
         return physicalDamage;
     }
@@ -14,9 +15,12 @@ public class Target {
         return iceDamage;
     }
 
+    private boolean immunity;
+
     private int physicalDamage;
 
     private int fireDamage;
 
     private int iceDamage;
+
 }

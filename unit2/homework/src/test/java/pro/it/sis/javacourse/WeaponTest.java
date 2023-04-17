@@ -22,19 +22,19 @@ public class WeaponTest {
     public void testFireDamage() {
 
         Target t = new Target();
-        Weapon w = new Weapon();
+        FlamingAsphalt w = new FlamingAsphalt();
         w.hit(t);
 
-        assertEquals(100, t.getFireDamage());
+        assertEquals(50, t.getFireDamage());
     }
 
     @Test
     public void testIceDamage() {
 
         Target t = new Target();
-        Weapon w = new Weapon();
+        NightSword w = new NightSword();
         w.hit(t);
 
-        assertEquals(100, t.getIceDamage());
+        assertEquals(50, t.getIceDamage());
     }
 }
