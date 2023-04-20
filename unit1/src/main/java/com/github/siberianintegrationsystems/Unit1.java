@@ -19,7 +19,6 @@ public class Unit1 {
      * @return
      */
     private static String revertString() {
-        // Сама себе нашла проблем и изобретала велосипед.
         int j = 0;
         String[] input = new String[INPUT_STRING.length()];
         for (int i = INPUT_STRING.length()-1; i >= 0; i--) {
@@ -33,15 +32,6 @@ public class Unit1 {
         String output = String.join("", input);
         System.out.println(output);
         return output;
-        /* Изначально боле верный вариант, но загугленный
-        char rev[] = INPUT_STRING.toCharArray();
-        String reverse = "";
-        for (int i = rev.length - 1; i >= 0; i--) {
-            reverse += rev[i];
-        }
-        System.out.println(reverse);
-        return reverse;
-    }*/
     }
 
     private static void checkResult(String result) {
