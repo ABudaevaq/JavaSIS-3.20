@@ -4,13 +4,13 @@ public class Human extends Target implements Damage {
     @Override
     public int getDamage(Weapon.HitDamage hitDamage) {
         if (hitDamage == HitDamage.PHYSICALDAMAGE) {
-            return Target.getPhysicalDamage();
+            return Damage.getPhysicalDamage();
         }
         if (hitDamage == HitDamage.FIREDAMAGE) {
-            return Target.getPhysicalDamage() + Target.getFireDamage();
+            return Damage.getPhysicalDamage() + Damage.getFireDamage();
         }
         if (hitDamage == HitDamage.ICEDAMAGE) {
-            return Target.getPhysicalDamage() + Target.getIceDamage();
+            return Damage.getPhysicalDamage() + Damage.getIceDamage();
         }
         return 0;
     }

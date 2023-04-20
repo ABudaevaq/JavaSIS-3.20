@@ -4,8 +4,8 @@ public class IceGolem extends Target implements Damage {
     @Override
     public int getDamage(Weapon.HitDamage hitDamage) {
         if (hitDamage == HitDamage.FIREDAMAGE) {
-            return Target.getPhysicalDamage() + Target.getFireDamage();
+            return Damage.getPhysicalDamage() + Damage.getFireDamage();
         }
-        return Target.getPhysicalDamage();
+        return Damage.getPhysicalDamage();
     }
 }

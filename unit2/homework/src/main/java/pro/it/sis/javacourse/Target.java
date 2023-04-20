@@ -12,20 +12,4 @@ public class Target implements Damage {
         }
         return 0;
     }
-
-    static int getPhysicalDamage() {
-        return physicalDamage;
-    }
-
-    static int getFireDamage() {
-        return fireDamage;
-    }
-
-    static int getIceDamage() {
-        return iceDamage;
-    }
-
-    private static final int physicalDamage = 100;
-    private static final int fireDamage = 50;
-    private static final int iceDamage = 50;
 }
