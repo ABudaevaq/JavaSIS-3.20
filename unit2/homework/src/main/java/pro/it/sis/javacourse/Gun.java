@@ -1,7 +1,7 @@
 package pro.it.sis.javacourse;
 
 public class Gun implements Weapon {
-    HitDamage hitDamage = HitDamage.PHYSICALDAMAGE;
+    protected HitDamage hitDamage = HitDamage.PHYSICALDAMAGE;
     @Override
     public void hit(Target target) {
         target.getDamage(hitDamage);

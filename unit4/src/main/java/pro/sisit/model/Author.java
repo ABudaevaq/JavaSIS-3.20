@@ -29,8 +29,7 @@ public class Author {
             return false;
         }
         Author author = (Author) o;
-        return getName().equals(author.getName()) &&
-            getBirthPlace().equals(author.getBirthPlace());
+        return getName().equals(author.getName()) && getBirthPlace().equals(author.getBirthPlace());
     }
 
     @Override

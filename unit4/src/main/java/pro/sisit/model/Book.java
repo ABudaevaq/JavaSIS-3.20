@@ -41,10 +41,8 @@ public class Book {
             return false;
         }
         Book book = (Book) o;
-        return getName().equals(book.getName()) &&
-            getAuthor().equals(book.getAuthor()) &&
-            getGenre().equals(book.getGenre()) &&
-            getIsbn().equals(book.getIsbn());
+        return getName().equals(book.getName()) && getAuthor().equals(book.getAuthor()) &&
+                getGenre().equals(book.getGenre()) && getIsbn().equals(book.getIsbn());
     }
 
     @Override
