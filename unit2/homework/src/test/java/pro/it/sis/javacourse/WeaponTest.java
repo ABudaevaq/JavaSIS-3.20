@@ -11,30 +11,30 @@ public class WeaponTest {
     @Test
     public void testPhysicalDamage() {
 
-        Target t = new Target();
-        Weapon w = new Weapon();
+        Target t = new Human();
+        Gun w = new Gun();
         w.hit(t);
 
-        assertEquals(100, t.getPhysicalDamage());
+        assertEquals(100, t.getDamage(w.hitDamage));
     }
 
     @Test
     public void testFireDamage() {
 
-        Target t = new Target();
+        Target t = new Human();
         FlamingAsphalt w = new FlamingAsphalt();
         w.hit(t);
 
-        assertEquals(50, t.getFireDamage());
+        assertEquals(150, t.getDamage(w.hitDamage));
     }
 
     @Test
     public void testIceDamage() {
 
-        Target t = new Target();
+        Target t = new Human();
         NightSword w = new NightSword();
         w.hit(t);
 
-        assertEquals(50, t.getIceDamage());
+        assertEquals(150, t.getDamage(w.hitDamage));
     }
 }

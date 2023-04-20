@@ -1,13 +1,13 @@
 package pro.it.sis.javacourse;
 
-public class Weapon {
-
-    void hit(Target target) {
-        return;
+interface Weapon {
+    enum HitDamage {
+        FIREDAMAGE,
+        ICEDAMAGE,
+        PHYSICALDAMAGE;
     }
-
-    /*void hit(Target target) {
-        Damage damage = new Damage(100);
-        target.takeHit(damage);
-    }*/
+    final HitDamage hitDamage = null;
+    default void hit(Target target) {
+        Target t = target;
+    }
 }

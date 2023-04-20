@@ -1,7 +1,7 @@
 package pro.it.sis.javacourse;
 
-public class FlamingAsphalt implements Weapon{
-    HitDamage hitDamage = HitDamage.FIREDAMAGE;
+public class Gun implements Weapon {
+    HitDamage hitDamage = HitDamage.PHYSICALDAMAGE;
     @Override
     public void hit(Target target) {
         Target t = target;
